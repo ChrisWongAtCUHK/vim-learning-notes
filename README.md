@@ -67,3 +67,13 @@ vim -d <file1> file2<>
 * :Explorer 開啟檔案瀏覽視窗
 * :e 開啟檔案瀏覽視窗，例如:`:e /home/user`
 
+## [現在的檔案名](https://vim.fandom.com/wiki/Get_the_name_of_the_current_file)
+* :echo @% 顯示相對於working directory的路徑名 
+* :echo expand('%:t') 顯示檔案名的'tail'
+* :echo expand('%:p') 顯示完整檔案名
+* :echo expand('%:p:h') 顯示完整檔案名的'head'
+* :echo expand('%:p:h:t') 先取檔案名的'head'，再取'tail'
+* :echo expand('%:r') 去掉一個檔案擴展名(extension), 'root'
+* :echo expand('%:e') 顯示檔案擴展名(extension), 'extension'
+* :put =expand('%:p') 在現在的檔案名插入完整檔案名
+* :help expand	查看更多的用法

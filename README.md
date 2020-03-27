@@ -63,3 +63,7 @@ vim -d <file1> file2<>
 * :diffget 從另一檔案最得差異
 * :diffput 在另一檔案套用差異
 
+## [File explorer](https://vim.fandom.com/wiki/File_explorer)
+* :Explorer 開啟檔案瀏覽視窗
+* :e 開啟檔案瀏覽視窗，例如:`:e /home/user`
+

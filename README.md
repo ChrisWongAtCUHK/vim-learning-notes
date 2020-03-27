@@ -42,3 +42,24 @@
 * :set all     顯示目前所有的環境參數設定值。
 * :syntax (off | on)     是否依據程式相關語法顯示不同顏色。
 
+## [使用 Vimdiff 比較檔案間的差異](https://blog.gtwang.org/useful-tools/vimdiff/)
+### 指令
+```
+vimdiff <file1> file2<>
+OR
+vim -d <file1> file2<>
+```
+
+### 在已打開的vim
+#### 開啟diff mode
+* :diffsplit filename 上下分割視的diff mode
+* :vert diffsplit filename 左右分割視的diff mode
+
+#### diff mode的的指示
+* ]c 跳到下一個差異點
+* [c 跳到上一個差異點
+* Ctrl + w Ctrl + w 切換檔案
+* :set [no]scrollbind 使用/取消卷軸同步功能
+* :diffget 從另一檔案最得差異
+* :diffput 在另一檔案套用差異
+
